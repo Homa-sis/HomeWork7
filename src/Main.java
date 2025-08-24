@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задача 1");
-        int salary = 29000;
+        int setAsideMonthly = 15000;
         int total = 0;
         int i = 0;
         while (total < 2_459_000) {
             total = total + total / 100;
-            total = total + salary;
+            total = total + setAsideMonthly;
             i++;
         }
         System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
@@ -24,6 +24,7 @@ public class Main {
         for (i = 10; i >= 1; i--) {
             System.out.print(i + " ");
         }
+        System.out.println(" ");
         System.out.println("Задача 3");
         int peopleCountryY = 12000000;
         int birthRate = 17;
@@ -52,8 +53,8 @@ public class Main {
         int total1 = 0;
         int mounth = 108;
         for (i = 1; i <= mounth; i++) {
-            total1 = total1 + balance;
-            total1 = total1 + (total1 / 100 * 7);
+            total1 = balance + total1;
+            total1 = total1 + (balance / 100 * 7);
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " накоплено " + total1 + " рублей");
             }

@@ -53,11 +53,12 @@ public class Main {
         int balance = 15_000;
         double total1 = 0;
         int mounth = 108;
-        for (i = 1; i <= mounth; i++) {
+        double percent2 = 0.07;
+        for (int i4 = 1; i4 <= mounth; i4++) {
             total1 += balance;
-            total1 = total1 + (balance / 100 * 7);
-            if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " накоплено " + total1 + " рублей");
+            total1 = total1 + (balance * percent2);
+            if (i4 % 6 == 0) {
+                System.out.println("Месяц " + i4 + " накоплено " + total1 + " рублей");
             }
         }
         System.out.println("Задача 7");
